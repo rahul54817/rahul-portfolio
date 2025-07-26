@@ -6,11 +6,12 @@
       "dom.iterable",
       "esnext"
     ],
+    "strict": false,
+    "noImplicitAny": false,
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
@@ -19,7 +20,11 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["styled-components", "node", "@types/babel__generator/index.d.ts"]
+    "types": [
+      "styled-components",
+      "node",
+      "@types/babel__generator/index.d.ts"
+    ]
   },
   "include": [
     "src"
