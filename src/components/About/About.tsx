@@ -7,7 +7,7 @@ import shopify from "../../assets/shopify.svg";
 import htmlIcon from "../../assets/html-icon.svg";
 import cssIcon from "../../assets/css-icon.svg";
 import jsIcon from "../../assets/js-icon.svg";
-// import nodeIcon from "../../assets/node-icon.svg";
+import nodeIcon from "../../assets/node-icon.svg";
 import reactIcon from "../../assets/react-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
 import vueIcon from "../../assets/vue-icon.svg";
@@ -61,11 +61,11 @@ export function About() {
               <img src={python} alt="python" />
             </ScrollAnimation>
           </div> */}
-          {/* <div className="hability">
+          <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.11 * 1000}>
-              <img src={java} alt="java" />
+              <img src={nodeIcon} alt="java" />
             </ScrollAnimation>
-          </div> */}
+          </div>
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.12 * 1000}>
               <img src={jsIcon} alt="JavaScript" />
@@ -115,7 +115,7 @@ export function About() {
       </div>
       <div className="about-image">
         <ScrollAnimation animateIn="fadeInRight" delay={0.21 * 1000}>
-          <img src={RshulYadav} alt="Rahul Singh" />
+          <img src={RshulYadav} alt="Rahul yadav" />
         </ScrollAnimation>
       </div>
     </Container>
