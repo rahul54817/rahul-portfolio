@@ -13,6 +13,8 @@ export function ContactForm() {
   const [isHuman, setIsHuman] = useState(false)
   const [message, setMessage] = useState('')
 
+  const recaptchaKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
+
   function verifyEmail(email: string) {
     setValidEmail(validator.isEmail(email))
   }
@@ -69,7 +71,7 @@ export function ContactForm() {
         <ValidationError prefix="Message" field="message" errors={state.errors} />
 
         <ReCAPTCHA
-          sitekey="6Lcsg48rAAAAAC5o6yL2opcIPHMZId7HuMEhZJh6"
+          sitekey= {recaptchaKey}
           onChange={() => setIsHuman(true)}
         />
 
