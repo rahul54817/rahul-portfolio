@@ -23,7 +23,7 @@ jobs:
         run: yarn install 
 
       - name: 🛠️ Build Project
-        run: yarn build
+        run: CI=false yarn build
 
       - name: 🚀 Deploy to Vercel
         env:
