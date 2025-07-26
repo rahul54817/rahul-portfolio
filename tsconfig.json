@@ -19,7 +19,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["@types/babel__generator/index.d.ts"]
+    "types": ["styled-components", "node", "@types/babel__generator/index.d.ts"]
   },
   "include": [
     "src"
