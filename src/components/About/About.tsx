@@ -42,12 +42,19 @@ export function About() {
             <h4> Bacholer of Engineering</h4>
             <p>Jawaharlal Institure of Technology, Borawan | July 2015 - July 2019</p>
             <p>7.23 CGPA</p>
+            <h4>PGDAC</h4>
+            <p>CDAC ACTs, Pune | September 2022 - March 2023</p>
+            <p>75 %</p>
           </div>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={550}>
           <div className="experience">
-             <h3>Experience:</h3><h4>Software Developer</h4>
+             <h3>Experience:</h3><h4>MERN Stack Developer</h4>
             <p>Zenqua Technology pvt ltd | October 2024 - Present</p>
+            <p>Indore, India</p>
+
+            <h4>Full Stack Developer (Intern)</h4>
+            <p>Logical Softech pvt ltd | December 2023 - October 2024</p>
             <p>Indore, India</p>
           </div>
         </ScrollAnimation>
