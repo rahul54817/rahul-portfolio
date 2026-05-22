@@ -1,7 +1,5 @@
 import { Container } from "./styles";
 import RshulYadav from "../../assets/rahul_yadav_img.png";
-import python from "../../assets/python.svg"
-import java from "../../assets/java.svg"
 import wordpress from "../../assets/wordpress.svg";
 import shopify from "../../assets/shopify.svg";
 import htmlIcon from "../../assets/html-icon.svg";
