@@ -43,7 +43,7 @@ export function Hero() {
           <div className="social-media">
 
             <a
-              href="https://linkedin.com/in/rahul-yadav"
+              href="https://www.linkedin.com/in/rahul-yadav-126a89356/"
               target="_blank"
               rel="noreferrer"
             >
