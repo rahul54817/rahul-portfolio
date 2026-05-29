@@ -2,8 +2,47 @@ import { Container } from "./styles";
 import githubIcon from "../../assets/github.svg";
 import externalLink from "../../assets/external-link.svg";
 import ScrollAnimation from "react-animate-on-scroll";
+import project11 from "../../assets/project-1-1.png";
+import project12 from "../../assets/project-1-2.png";
+import project13 from "../../assets/project-1-3.png";
+
+import project21 from "../../assets/project-2-1.png";
+import project22 from "../../assets/project-2-2.png";
+import project23 from "../../assets/project-2-3.png";
+import project24 from "../../assets/project-2-4.png";
+import project25 from "../../assets/project-2-5.png";
+
+import { useState } from "react";
 
 export function Project() {
+  const centralImages = [project11, project12, project13];
+  const sandeshImages = [project21, project22, project23, project24, project25];
+
+  const [currentImage, setCurrentImage] = useState(0);
+  const [currentSandeshImage, setCurrentSandeshImage] = useState(0);
+
+  const nextImage = () => {
+    setCurrentImage((prev) =>
+      prev === centralImages.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  const prevImage = () => {
+    setCurrentImage((prev) =>
+      prev === 0 ? centralImages.length - 1 : prev - 1
+    );
+  };
+  const nextSandeshImage = () => {
+    setCurrentSandeshImage((prev) =>
+      prev === sandeshImages.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  const prevSandeshImage = () => {
+    setCurrentSandeshImage((prev) =>
+      prev === 0 ? sandeshImages.length - 1 : prev - 1
+    );
+  };
   return (
     <Container id="project">
       <h2>My Projects</h2>
@@ -40,20 +79,32 @@ export function Project() {
               </div>
             </header>
 
+            {/* Image Section */}
+            <div className="project-image">
+              <img
+                src={centralImages[currentImage]}
+                alt="Project Screenshot"
+              />
+
+              <div className="image-buttons">
+                <button onClick={prevImage}>Prev</button>
+                <button onClick={nextImage}>Next</button>
+              </div>
+            </div>
+
             <div className="body">
-              <h3>Multilingual VQA Vision-Language Model</h3>
+              <h3>Car Rental Service</h3>
 
               <p>
-                Fine-tuned Qwen2.5-VL for visual question answering across
-                14 languages with optimized preprocessing.
+                A full-stack car rental platform that allows users to browse, book, and manage rental vehicles online. Built with ReactJs, NodeJs, and MongoDB, featuring responsive UI, authentication, and booking management functionality.
               </p>
             </div>
 
             <footer>
               <ul className="tech-list">
-                <li>Python</li>
-                <li>Qwen2.5-VL</li>
-                <li>Unsloth</li>
+                <li>ReactJs</li>
+                <li>NodeJs</li>
+                <li>MongoDB</li>
               </ul>
             </footer>
           </div>
@@ -91,22 +142,35 @@ export function Project() {
               </div>
             </header>
 
+            {/* Image Section */}
+            <div className="project-image">
+              <img
+                src={sandeshImages[currentSandeshImage]}
+                alt="Project Screenshot"
+              />
+
+              <div className="image-buttons">
+                <button onClick={prevSandeshImage}>Prev</button>
+                <button onClick={nextSandeshImage}>Next</button>
+              </div>
+            </div>
+
             <div className="body">
               <h3>
-                Serverless Voting Application for Programming Languages
+                Sanesh Pharma
               </h3>
 
               <p>
-                Developed a serverless voting app using React, AWS Lambda,
-                API Gateway, and DynamoDB.
+                A pharma e-commerce web application developed for managing medicines, categories, and online orders. Built using React, NodeJs, ExpressJs, and MongoDB with secure admin management and user-friendly product browsing.
               </p>
             </div>
 
             <footer>
               <ul className="tech-list">
-                <li>AWS Lambda</li>
-                <li>API Gateway</li>
-                <li>DynamoDB</li>
+                <li>React</li>
+                <li>NodeJs</li>
+                <li>ExpressJs</li>
+                <li>MongoDB</li>
               </ul>
             </footer>
           </div>
