@@ -11,6 +11,18 @@ import typescriptIcon from "../../assets/typescript-icon.svg";
 import vueIcon from "../../assets/vue-icon.svg";
 import boostrapIcon from "../../assets/bootstrap-icon.svg";
 import ScrollAnimation from "react-animate-on-scroll";
+import awsEC2 from "../../assets/aws/EC2.svg";
+import s3Bucket from "../../assets/aws/Simple Storage Service.svg";
+import lambda from "../../assets/aws/Lambda.svg";
+import awsApiGateway from "../../assets/aws/API Gateway.svg";
+import awsdynamoDB from "../../assets/aws/DynamoDB.svg";
+import awsRDS from "../../assets/aws/RDS.svg";
+import awsSQS from "../../assets/aws/Simple Queue Service.svg";
+import awsSNS from "../../assets/aws/Simple Notification Service.svg";
+import awsClodewatch from "../../assets/aws/CloudWatch.svg";
+import awsIAM from "../../assets/aws/IAM Identity Center.svg";
+import awsVPC from "../../assets/aws/Virtual Private Cloud.svg";
+
 
 export function About() {
   return (
@@ -21,17 +33,17 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
           <p>
-            Hi there! I'm Rahul, an enthusiastic Software Engineer skilled in web development, machine learning, and scalable software solutions
+            Hi there! I'm Rahul, a Full Stack Software Engineer passionate about building scalable web applications, cloud-native solutions, and modern microservices using React, Node.js, Golang, AWS, Docker, and Terraform.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
           <p>
-            I build responsive web applications, fine-tune ML models, and implement robust backend services.
+            I specialize in developing responsive user interfaces, secure backend services, and production-ready cloud applications. My experience includes designing REST APIs, implementing microservices, managing cloud infrastructure on AWS, and automating deployments with Docker, Terraform, and CI/CD pipelines.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.3 * 1000}>
           <p>
-            I also work with CMS platforms like WordPress and Shopify to streamline content management.
+           I enjoy solving complex engineering challenges, optimizing application performance, and writing clean, maintainable code that delivers reliable and scalable solutions. I'm always eager to learn new technologies and contribute to impactful products.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={400}>
@@ -47,12 +59,12 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={550}>
           <div className="experience">
-             <h3>Experience:</h3><h4>MERN Stack Developer</h4>
-            <p>Zenqua Technology pvt ltd | October 2024 - Present</p>
+             <h3>Experience:</h3><h4>Senier Software Engineer</h4>
+            <p>Zenqua Technology pvt ltd | January 2024 - Present</p>
             <p>Indore, India</p>
 
             <h4>Full Stack Developer (Intern)</h4>
-            <p>Logical Softech pvt ltd | December 2023 - October 2024</p>
+            <p>Logical Softech pvt ltd | April 2023 - December 2024</p>
             <p>Indore, India</p>
           </div>
         </ScrollAnimation>
@@ -114,6 +126,68 @@ export function About() {
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.20 * 1000}>
               <img src={boostrapIcon} alt="bootstrap" />
+            </ScrollAnimation>
+          </div>
+          <div className="hability">
+            <ScrollAnimation animateIn="fadeInUp" delay={0.20 * 1000}>
+              <img src={awsEC2} alt="ec2" />
+            </ScrollAnimation>
+          </div>
+        </div>
+        <div className="hard-skills">
+          <div className="hability">
+            <ScrollAnimation animateIn="fadeInUp" delay={0.20 * 1000}>
+              <img src={awsEC2} alt="ec2" />
+            </ScrollAnimation>
+          </div>
+          <div className="hability">
+            <ScrollAnimation animateIn="fadeInUp" delay={0.20 * 1000}>
+              <img src={s3Bucket} alt="ec2" />
+            </ScrollAnimation>
+          </div>
+          <div className="hability">
+            <ScrollAnimation animateIn="fadeInUp" delay={0.20 * 1000}>
+              <img src={lambda} alt="ec2" />
+            </ScrollAnimation>
+          </div>
+          <div className="hability">
+            <ScrollAnimation animateIn="fadeInUp" delay={0.20 * 1000}>
+              <img src={awsApiGateway} alt="ec2" />
+            </ScrollAnimation>
+          </div>
+          <div className="hability">
+            <ScrollAnimation animateIn="fadeInUp" delay={0.20 * 1000}>
+              <img src={awsdynamoDB} alt="ec2" />
+            </ScrollAnimation>
+          </div>
+          <div className="hability">
+            <ScrollAnimation animateIn="fadeInUp" delay={0.20 * 1000}>
+              <img src={awsRDS} alt="ec2" />
+            </ScrollAnimation>
+          </div>
+          <div className="hability">
+            <ScrollAnimation animateIn="fadeInUp" delay={0.20 * 1000}>
+              <img src={awsSQS} alt="ec2" />
+            </ScrollAnimation>
+          </div>
+          <div className="hability">
+            <ScrollAnimation animateIn="fadeInUp" delay={0.20 * 1000}>
+              <img src={awsSNS} alt="ec2" />
+            </ScrollAnimation>
+          </div>
+          <div className="hability">
+            <ScrollAnimation animateIn="fadeInUp" delay={0.20 * 1000}>
+              <img src={awsClodewatch} alt="ec2" />
+            </ScrollAnimation>
+          </div>
+          <div className="hability">
+            <ScrollAnimation animateIn="fadeInUp" delay={0.20 * 1000}>
+              <img src={awsIAM} alt="ec2" />
+            </ScrollAnimation>
+          </div>
+          <div className="hability">
+            <ScrollAnimation animateIn="fadeInUp" delay={0.20 * 1000}>
+              <img src={awsVPC} alt="ec2" />
             </ScrollAnimation>
           </div>
         </div>
